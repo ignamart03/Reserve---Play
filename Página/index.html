@@ -10,30 +10,76 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  <style>
+    @font-face {
+      font-family: 'Agrandir Grand Black';
+      src: url('path/to/agrandir-grand-black.woff2') format('woff2'),
+        url('path/to/agrandir-grand-black.woff') format('woff');
+      font-weight: 900;
+      font-style: normal;
+    }
+
+    .bloc1,
+    .bloc2 {
+      width: 40%;
+      padding: 20px;
+      display: inline-block;
+    }
+
+    .logo {
+      text-align: right;
+
+    }
+
+    .margin {
+      margin: 2%;
+    }
+
+    li {
+      font-family: 'Agrandir Grand Black', sans-serif;
+      font-weight: 900;
+    }
+
+    body {
+      background-color: #212121;
+    }
+  </style>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-    <div class="collapse navbar-collapse" id="navbarsExample09">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
-        <li class="nav-item"><a class="nav-link" href="reserve.html">Reserva</a></li>
-        <li class="nav-item"><a class="nav-link" href="popular.html">Sitios populares</a></li>
-        <li class="nav-item"><a class="nav-link" href="help.html">Ayuda</a></li>
+    <div class="bloc1">
+      <ul class="navbar-nav mr-auto flex-grow-1">
+        <li class="nav-item margin"><a class="nav-link" href="profile.html">Perfil</a></li>
+        <li class="nav-item margin"><a class="nav-link" href="reserve.html">Reserva</a></li>
+        <li class="nav-item margin"><a class="nav-link" href="popular.html">Sitios populares</a></li>
+        <li class="nav-item margin"><a class="nav-link" href="help.html">Ayuda</a></li>
       </ul>
-      <a class="navbar-brand ml-auto" href="#"><img src="../images/logo.webp" width="15%" height="15%"></a>
+    </div>
+    <div class="bloc2 logo">
+      <a href="index.html"><img src="../images/logo.webp" width="30%" height="30%"></a>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
       aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   </nav>
+
+  
+<form action="../../form-result.php" method="post" target="_blank">
+
+  <p>
+
+    Búsqueda de música: <input type="search" name="busquedaSitio" placeholder="Deporte a jugar, Localización...">
+
+    <input type="submit" value="Buscar">
+
+  </p>
+
+</form>
 </body>
 
 </html>
