@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Agrandir Grand Black';
+    src: url('path/to/agrandir-grand-black.woff2') format('woff2'),
+        url('path/to/agrandir-grand-black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agrandir Wide Medium';
+    src: url('path/to/agrandir-wide-medium.woff2') format('woff2'),
+        url('path/to/agrandir-wide-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.bloc1,
+.bloc2 {
+    width: 50%;
+    padding: 20px;
+    display: inline-block;
+}
+
+.logo {
+    text-align: right;
+
+}
+
+.margin {
+    margin: 2%;
+}
+
+li {
+    font-family: 'Agrandir Grand Black', sans-serif;
+    font-weight: 900;
+}
+
+body {
+    background-color: #212121;
+    font-family: 'agrandir wide medium', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'agrandir grand black', sans-serif;
+}
+
+h2 {
+    color: #C4F723;
+    text-align: center;
+    margin-top: 50px;
+}
