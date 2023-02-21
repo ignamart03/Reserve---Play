@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.webp">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href=".//styles/main.css">
+    <link rel="stylesheet" href=".//styles/form.css">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <div class="bloc1">
+            <ul class="navbar-nav mr-auto flex-grow-1">
+                <li class="nav-item margin"><a class="nav-link" href="profile.html">Perfil</a></li>
+                <li class="nav-item margin"><a class="nav-link" href="reserve.html">Reserva</a></li>
+                <li class="nav-item margin"><a class="nav-link" href="popular.html">Sitios populares</a></li>
+                <li class="nav-item margin"><a class="nav-link" href="help.html">Ayuda</a></li>
+            </ul>
+        </div>
+        <div class="bloc2 logo">
+            <a href="index.html"><img src="../images/logo.webp" width="25%" height="25%"></a>
+        </div>
+    </nav>
+    <h1>Registro</h1>
+    <div class="contenedor">
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="codigo-postal">Código postal:</label>
+            <input type="text" id="codigo-postal" name="codigo-postal" required><br><br>
+
+            <label for="nombre-usuario">Nombre de usuario:</label>
+            <input type="text" id="nombre-usuario" name="nombre-usuario" required><br><br>
+
+            <label for="deporte-favorito">Deporte favorito:</label>
+            <select id="deporte-favorito" name="deporte-favorito" required>
+                <option value="">Selecciona una opción</option>
+                <option value="futbol">Fútbol</option>
+                <option value="baloncesto">Baloncesto</option>
+                <option value="tenis">Tenis</option>
+                <option value="natacion">Natación</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
 </body>
+
 </html>

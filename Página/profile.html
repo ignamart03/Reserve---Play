@@ -3,74 +3,13 @@
 
 <head>
     <title>Login Perfil</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.webp">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href=".//styles/main.css">
+    <link rel="stylesheet" href=".//styles/form.css">
     <style>
-        body {
-            background-color: #212121;
-        }
-
-        h1,
-        h2 {
-            font-family: 'agrandir grand black', sans-serif;
-        }
-
-        h2 {
-            color: #C4F723;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        form {
-            background-color: #fff;
-            color: #212121;
-            margin: auto;
-            width: 50%;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 30px;
-        }
-
-        label {
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border: none;
-            border-bottom: 2px solid #212121;
-            background-color: #fff;
-            color: #212121;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            border-radius: 0;
-        }
-
-        input[type="submit"] {
-            background-color: #C4F723;
-            color: #212121;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #4CAF50;
-            color: #fff;
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        .container {
+        .contenedor {
             padding: 16px;
         }
     </style>
@@ -87,12 +26,12 @@
           </ul>
         </div>
         <div class="bloc2 logo">
-          <a href="index.html"><img src="../images/logo.webp" width="30%" height="30%"></a>
+          <a href="index.html"><img src="../images/logo.webp" width="25%" height="25%"></a>
         </div>
       </nav>
     <h2>Login Form</h2>
     <form>
-        <div class="container">
+        <div class="contenedor">
             <label for="username"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="username" required>
 
@@ -100,6 +39,7 @@
             <input type="password" placeholder="Enter Password" name="password" required>
 
             <input type="submit" value="Login">
+            <p>¿No tienes una cuenta? <a href="register.html">Regístrate</a></p>
         </div>
     </form>
 </body>
