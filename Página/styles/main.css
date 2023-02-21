@@ -1,20 +1,3 @@
-/* @font-face {
-    font-family: 'Agrandir Grand Black';
-    src: url('path/to/agrandir-grand-black.woff2') format('woff2'),
-        url('path/to/agrandir-grand-black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Agrandir Wide Medium';
-    src: url('path/to/agrandir-wide-medium.woff2') format('woff2'),
-        url('path/to/agrandir-wide-medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-} */
-
-
 .bloc1,
 .bloc2 {
     width: 50%;
