@@ -1,13 +1,13 @@
 .bloc1,
 .bloc2 {
     width: 50%;
-    padding: 20px;
+    padding: 5px;
     display: inline-block;
 }
 
 .logo {
-    text-align: right;
-    margin-right: 5%;
+    text-align: center;
+    margin-left: 10%;
 }
 
 .margin {
@@ -15,8 +15,9 @@
 }
 
 li {
-    font-family: 'Agrandir Grand Black', sans-serif;
+    font-family: 'PP Agrandir Grand Heavy';
     font-weight: 900;
+    font-size: 23px;
 }
 
 body {

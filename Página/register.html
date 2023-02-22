@@ -16,14 +16,14 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
         <div class="bloc1">
             <ul class="navbar-nav mr-auto flex-grow-1">
-                <li class="nav-item margin"><a class="nav-link" href="profile.html">Perfil</a></li>
+                <li class="nav-item margin"><a class="nav-link active" href="profile.html">Perfil</a></li>
                 <li class="nav-item margin"><a class="nav-link" href="reserve.html">Reserva</a></li>
                 <li class="nav-item margin"><a class="nav-link" href="popular.html">Sitios populares</a></li>
                 <li class="nav-item margin"><a class="nav-link" href="help.html">Ayuda</a></li>
             </ul>
         </div>
         <div class="bloc2 logo">
-            <a href="index.html"><img src="../images/logo.webp" width="25%" height="25%"></a>
+            <a href="index.html"><img src="../images/logo.webp" width="30%" height="30%"></a>
         </div>
     </nav>
     <h1>Registro</h1>
@@ -45,14 +45,15 @@
             <input type="text" id="nombre-usuario" name="nombre-usuario" required><br><br>
 
             <label for="deporte-favorito">Deporte favorito:</label>
-            <select id="deporte-favorito" name="deporte-favorito" required>
-                <option value="">Selecciona una opción</option>
-                <option value="futbol">Fútbol</option>
-                <option value="baloncesto">Baloncesto</option>
-                <option value="tenis">Tenis</option>
-                <option value="natacion">Natación</option>
-                <option value="otro">Otro</option>
-            </select><br><br>
+            <input type="text" list="cars" />
+            <datalist id="cars">
+                <option>Fútbol</option>
+                <option>Pádel</option>
+                <option>Ténis</option>
+                <option>Rugby</option>
+                <option>Baloncesto</option>
+                <option>Bádminton</option>
+            </datalist>
 
             <input type="submit" value="Enviar">
         </form>
