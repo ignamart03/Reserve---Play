@@ -32,7 +32,8 @@ h2 {
     font-weight: 900;
 }
 
-h2, h1 {
+h2,
+h1 {
     color: #C4F723;
     text-align: center;
     margin-top: 50px;
@@ -41,12 +42,17 @@ h2, h1 {
 
 h3 {
     color: #fdfafa;
-    text-align: center;
-    margin-top: 50px;
     font-weight: 900;
 }
 
+h6 {
+    color: #fdfafa;
+    font-weight: 900;
+    text-align: center;
+}
+
 p {
+    color: #fdfafa;
     font-family: 'Agrandir Grand Black', sans-serif;
     font-weight: 700;
 }
