@@ -37,6 +37,25 @@
             height: 100%;
             width: 100%;
         }
+
+        .participantes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .num2ParticipantesLado {
+            height: 70%;
+            width: 70%;
+        }
+
+        .num3ParticipantesLado {
+            height: 50%;
+            width: 50%;
+        }
     </style>
 </head>
 
@@ -54,36 +73,77 @@
             <a href="index.html"><img src="../images/logo.webp" width="25%" height="25%"></a>
         </div>
     </nav>
-    <h2 id="title">Reservas actuales</h2>
-    <div class="columna">
-        <div class="imagen">
-            <h3>Sitio reservado y deporte</h3>
-            <img src="../images/Gmaps.jpg" width="100%" height="100%" alt="">
-            <p>Informacion sobre el sitio, más informacion sobre el sitio</p>
-            <p>Día, hora, nºpista</p>
-            <h6>Participantes</h6>
+    <div>
+        <h2 id="title">Reservas actuales</h2>
+    </div>
+    <div>
+        <div class="columna">
+            <div class="imagen">
+                <h3>Sitio reservado y deporte</h3>
+                <img src="../images/Gmaps.jpg" width="100%" height="100%" alt="">
+                <p>Informacion sobre el sitio, más informacion sobre el sitio</p>
+                <p>Día, hora, nºpista</p>
+                <h6>Participantes</h6>
+                <div class="participantes">
+                    <div class="num2ParticipantesLado">
+                        <img src="../images/profile.png" width="100%" height="40%" alt="Image 1">
+                        <img src="../images/profile.png" width="100%" height="40%" alt="Image 1">
+                    </div>
+                    <div>
+                        <h1>VS</h1>
+                    </div>
+                    <div class="num2ParticipantesLado">
+                        <img src="../images/profile.png" width="100%" height="40%" alt="Image 2">
+                        <img src="../images/profile.png" width="100%" height="40%" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columna">
+            <div class="imagen">
+                <h3>Sitio reservado y deporte</h3>
+                <img src="../images/Gmaps.jpg" width="100%" height="100%" alt="">
+                <p>Informacion sobre el sitio, más informacion sobre el sitio</p>
+                <p>Día, hora, nºpista</p>
+                <h6>Participantes</h6>
+                <div class="participantes">
+                    <div class="num3ParticipantesLado">
+                        <img src="../images/profile.png" width="100%" height="40%" alt="Image 1">
+                        <img src="../images/profile.png" width="100%" height="40%" alt="Image 1">
+                        <img src="../images/profile.png" width="100%" height="40%" alt="Image 1">
+                    </div>
+                    <div>
+                        <h1>VS</h1>
+                    </div>
+                    <div class="num3ParticipantesLado">
+                        <img src="../images/profile.png" width="100%" height="40%" alt="Image 2">
+                        <img src="../images/profile.png" width="100%" height="40%" alt="Image 1">
+                        <img src="../images/profile.png" width="100%" height="40%" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columna">
+            <div class="imagen">
+                <h3>Sitio reservado y deporte</h3>
+                <img src="../images/Gmaps.jpg" width="100%" height="100%" alt="">
+                <p>Informacion sobre el sitio, más nformacion sobre el sitio</p>
+                <p>Día, hora, nºpista</p>
+                <h6>Participantes</h6>
+                <div class="participantes">
+                    <div>
+                        <img src="../images/profile.png" width="100%" height="40%" alt="Image 1">
+                    </div>
+                    <div>
+                        <h1>VS</h1>
+                    </div>
+                    <div>
+                        <img src="../images/profile.png" width="100%" height="40%" alt="Image 2">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="columna">
-        <div class="imagen">
-            <h3>Sitio reservado y deporte</h3>
-            <img src="../images/Gmaps.jpg" width="100%" height="100%" alt="">
-            <p>Informacion sobre el sitio, más informacion sobre el sitio</p>
-            <p>Día, hora, nºpista</p>
-            <h6>Participantes</h6>
-        </div>
-    </div>
-    <div class="columna">
-        <div class="imagen">
-            <h3>Sitio reservado y deporte</h3>
-            <img src="../images/Gmaps.jpg" width="100%" height="100%" alt="">
-            <p>Informacion sobre el sitio, más nformacion sobre el sitio</p>
-            <p>Día, hora, nºpista</p>
-            <h6>Participantes</h6>
-        </div>
-    </div>
-    <br>
-    <a href="#" class="enlace">Historial de Reservas</a>
 
 </body>
 
