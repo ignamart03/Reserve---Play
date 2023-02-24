@@ -25,6 +25,18 @@
             font-weight: 900;
         }
     </style>
+
+    <script>
+        function initMap() {
+            var location = { lat: -34.397, lng: 150.644 }; // coordenas para centrar el mapa
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: location
+            });
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
 </head>
 
 <body>
@@ -47,9 +59,7 @@
     <div class="columna">
         <a href="#" class="enlace">Historial de Reservas</a>
     </div>
-
-
-
+    <div id="map"></div>
 </body>
 
 </html>

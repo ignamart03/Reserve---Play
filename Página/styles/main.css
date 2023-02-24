@@ -22,12 +22,14 @@ li {
 
 body {
     background-color: #212121;
-    font-family: 'agrandir wide medium', sans-serif;
+    font-family: 'Agrandir Wide Medium', sans-serif;
+
 }
 
 h1,
 h2 {
     font-family: "Agrandir Wide Medium", sans-serif;
+    font-weight: 900;
 }
 
 h2, h1 {
@@ -46,5 +48,5 @@ h3 {
 
 p {
     font-family: 'Agrandir Grand Black', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
 }
