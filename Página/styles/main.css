@@ -50,7 +50,8 @@ h6 {
     font-weight: 900;
 }
 
-p, summary {
+p,
+summary {
     color: #fdfafa;
     font-family: 'PP Agrandir Grand Light', sans-serif;
     font-weight: 700;
@@ -72,4 +73,10 @@ h4 {
 
 .hover :hover {
     background-color: #212121;
+}
+
+footer {
+    background-color: #212121;
+    color: white;
+    padding: 20px;
 }
