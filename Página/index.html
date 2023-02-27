@@ -22,23 +22,23 @@
       color: #212121;
     }
 
-    input::placeholder {
-      font-family: "Agrandir Wide Medium";
-    }
-
     .columna {
       display: inline-block;
       width: 25%;
       height: 600px;
       margin: 4%;
-      border: 1px solid black;
       box-sizing: border-box;
-      background-color: aliceblue;
+      background-color: #212121
     }
 
     .wrapper {
       display: flex;
     }
+
+    span {
+      color: aliceblue;
+    }
+    
   </style>
   <!-- Esto es el script source para el calendario del index. El calendario enseñará todas las reservas del usuario -->
   <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js'></script>
@@ -73,11 +73,11 @@
   <div class="input-group divBuscar">
     <input type="search" class="form-control rounded" placeholder="Ciudad, dirección, deporte..." aria-label="Search"
       aria-describedby="search-addon" />
-    <button type="button" class="btn btn-outline-primary">search</button>
+    <button type="button" class="btn btn-outline-primary">Buscar</button>
   </div>
 
   <div class="wrapper">
-    <div class="columna" style="background-color: #212121; border: 0px;">
+    <div class="columna">
       <a href="popular.html">
         <div>
           <h2 style="margin-top: 0%; margin-bottom: 5%;">Sitios más populares</h2>
@@ -93,6 +93,19 @@
     </div>
     <div class="columna">
       <h2 style="margin-top: 0%; margin-bottom: 5%;">¡Mejores reseñas!</h2>
+      <div>
+        <h5> <img src="../images/profile.png" alt="imagen usuario" width="10%" height="10%"> HappyFeet39 <span>4,6</span>⭐</h5>
+        <p style="margin-bottom: 5%;">¡Este es el mejor sitio de reservas de toda España!</p>
+
+        <h5> <img src="../images/profile.png" alt="imagen usuario" width="10%" height="10%"> Pedro45 <span>4,8</span>⭐</h5>
+        <p style="margin-bottom: 5%;">!Buen sistema para realizar reservas en sitios sospechosos!</p>
+
+        <h5> <img src="../images/profile.png" alt="imagen usuario" width="10%" height="10%"> RandomUser <span>4,7</span>⭐</h5>
+        <p style="margin-bottom: 5%;">Página web muy cuidada. Buena relación con el cliente.</p>
+        
+        <h5> <img src="../images/profile.png" alt="imagen usuario" width="10%" height="10%"> Pepe <span>4,9</span>⭐</h5>
+        <p style="margin-bottom: 5%;">Rápido, cómodo y sencillo. Y todo desde tu sofá.</p>
+      </div>
     </div>
     <div class="columna">
       <h2 style="margin-top: 0%; margin-bottom: 5%;">Calendario</h2>
