@@ -22,13 +22,13 @@ li {
 
 body {
     background-color: #212121;
-    font-family: 'Agrandir Wide Medium', sans-serif;
+    font-family: 'PP Agrandir Grand Light', sans-serif;
 
 }
 
 h1,
 h2 {
-    font-family: "Agrandir Wide Medium", sans-serif;
+    font-family: "PP Agrandir Grand Light", sans-serif;
     font-weight: 900;
 }
 
@@ -48,15 +48,20 @@ h3 {
 h6 {
     color: #fdfafa;
     font-weight: 900;
-    text-align: center;
 }
 
 p {
     color: #fdfafa;
-    font-family: 'Agrandir Grand Black', sans-serif;
+    font-family: 'PP Agrandir Grand Light', sans-serif;
     font-weight: 700;
 }
 
+
+h5 {
+    color: #C4F723;
+    text-align: left;
+    font-weight: 900;
+}
 
 h4 {
     color: #C4F723;

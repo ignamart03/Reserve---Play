@@ -29,15 +29,30 @@
     .columna {
       display: inline-block;
       width: 25%;
-      height: 400px;
+      height: 600px;
       margin: 4%;
       border: 1px solid black;
       box-sizing: border-box;
       background-color: aliceblue;
     }
+
+    .wrapper {
+      display: flex;
+    }
   </style>
+  <!-- Esto es el script source para el calendario del index. El calendario enseñará todas las reservas del usuario -->
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js'></script>
+  <script>
 
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth'
+      });
+      calendar.render();
+    });
 
+  </script>
 </head>
 
 <body>
@@ -61,27 +76,30 @@
     <button type="button" class="btn btn-outline-primary">search</button>
   </div>
 
-  <div class="columna hover">
-    <div>
-      <a href="#">
-        <h4>Sitios más populares</h4>
+  <div class="wrapper">
+    <div class="columna" style="background-color: #212121; border: 0px;">
+      <a href="popular.html">
+        <div>
+          <h2 style="margin-top: 0%; margin-bottom: 5%;">Sitios más populares</h2>
+        </div>
+        <div class="pic-ctn">
+          <img src="../images/baloncesto.jpg" alt="" class="pic">
+          <img src="../images/campo-futbol.jpg" alt="" class="pic">
+          <img src="../images/Pista-padel-pabellon.jpg" alt="" class="pic">
+          <img src="../images/rugby.jpg" alt="" class="pic">
+          <img src="../images/tenis.jpg" alt="" class="pic">
+        </div>
       </a>
     </div>
-    <div class="pic-ctn">
-      <img src="../images/baloncesto.jpg" alt="" class="pic">
-      <img src="../images/campo-futbol.jpg" alt="" class="pic">
-      <img src="../images/Pista-padel-pabellon.jpg" alt="" class="pic">
-      <img src="../images/rugby.jpg" alt="" class="pic">
-      <img src="../images/tenis.jpg" alt="" class="pic">
+    <div class="columna">
+      <h2 style="margin-top: 0%; margin-bottom: 5%;">¡Mejores reseñas!</h2>
+    </div>
+    <div class="columna">
+      <h2 style="margin-top: 0%; margin-bottom: 5%;">Calendario</h2>
+      <div id='calendar'></div>
     </div>
   </div>
-  <div class="columna">
-    <h4>¡Mejores reseñas!</h4>
-  </div>
-  <div class="columna">
-    <h4>Calendario</h4>
-    <input type="text" class="form-control" id="datepicker">
-  </div>
+
 </body>
 
 </html>
