@@ -9,6 +9,7 @@
   <link rel="icon" type="image/x-icon" href="../images/logo.webp">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href=".//styles/main.css">
+  <link rel="stylesheet" href=".//styles/carrousel.css">
   <style>
     .divBuscar {
       width: 50%;
@@ -26,16 +27,17 @@
     }
 
     .columna {
-        display: inline-block;
-        width: 25%;
-        height: 400px;
-        margin: 4%;
-        border: 1px solid black;
-        box-sizing: border-box;
-        background-color: aliceblue;
-      }
-
+      display: inline-block;
+      width: 25%;
+      height: 400px;
+      margin: 4%;
+      border: 1px solid black;
+      box-sizing: border-box;
+      background-color: aliceblue;
+    }
   </style>
+
+
 </head>
 
 <body>
@@ -59,9 +61,27 @@
     <button type="button" class="btn btn-outline-primary">search</button>
   </div>
 
-  <div class="columna"><h2>Sitio más popular</h2></div>
-  <div class="columna"><h2>¡Mejores reseñas!</h2></div>
-  <div class="columna"><h2>Calendario</h2></div>
+  <div class="columna hover">
+    <div>
+      <a href="#">
+        <h4>Sitios más populares</h4>
+      </a>
+    </div>
+    <div class="pic-ctn">
+      <img src="../images/baloncesto.jpg" alt="" class="pic">
+      <img src="../images/campo-futbol.jpg" alt="" class="pic">
+      <img src="../images/Pista-padel-pabellon.jpg" alt="" class="pic">
+      <img src="../images/rugby.jpg" alt="" class="pic">
+      <img src="../images/tenis.jpg" alt="" class="pic">
+    </div>
+  </div>
+  <div class="columna">
+    <h4>¡Mejores reseñas!</h4>
+  </div>
+  <div class="columna">
+    <h4>Calendario</h4>
+    <input type="text" class="form-control" id="datepicker">
+  </div>
 </body>
 
 </html>
